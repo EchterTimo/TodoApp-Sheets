@@ -1,0 +1,19 @@
+meta {
+  name: Create
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{ENDPOINT}}?pw={{pw}}&action=create&name=Test&description=Das ist ein Test&status=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  pw: {{pw}}
+  action: create
+  name: Test
+  description: Das ist ein Test
+  status: 0
+}

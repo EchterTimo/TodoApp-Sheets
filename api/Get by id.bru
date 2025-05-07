@@ -1,0 +1,17 @@
+meta {
+  name: Get by id
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{ENDPOINT}}?pw={{pw}}&action=read&id=88447fa3-bcee-45f3-b385-db79bae603d8
+  body: none
+  auth: inherit
+}
+
+params:query {
+  pw: {{pw}}
+  action: read
+  id: 88447fa3-bcee-45f3-b385-db79bae603d8
+}
